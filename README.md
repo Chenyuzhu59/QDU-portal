@@ -16,3 +16,9 @@ Its functions include:
 * checking campus calendar
 * checking campus official phone numbers
 * campus navigation
+
+## Display
+#### 1. Mainpage
+![mainpage.png](https://i.loli.net/2021/07/30/Gs72kJV1UYmRDun.png)
+#### 2. Check Schedul and Grade
+![schedulandgrades.png](https://i.loli.net/2021/07/30/jgJtsaP9GpEBN6Q.png)
