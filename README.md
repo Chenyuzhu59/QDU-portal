@@ -22,3 +22,4 @@ Its functions include:
 ![mainpage.png](https://i.loli.net/2021/07/30/Gs72kJV1UYmRDun.png)
 #### 2. Check Schedul and Grade
 ![schedulandgrades.png](https://i.loli.net/2021/07/30/FpNo7slCQ1jYEx5.png)
+#### More display figures are being made, please wait...
