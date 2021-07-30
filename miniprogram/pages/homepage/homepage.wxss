@@ -1,0 +1,155 @@
+/* miniprogram/pages/homepage/homepage.wxss */
+.left{
+  float: left
+}
+.cl{
+  clear: both
+}
+.lunbo{
+  width: 100%
+}
+.lunbo image{
+  width: 100%
+}
+.showfunction{
+  height: 435rpx;
+  background: #fff;
+}
+.sf-item{
+  display: flex;
+  float: left;
+  position: relative;
+  width: 140rpx;
+  height: 180rpx;
+  margin-top: 38rpx;
+  margin-left: 42rpx;
+}
+.sf-img image{
+  width:100rpx;
+  height: 100rpx;
+}
+.sf-info{
+  position: absolute;
+  height: 40rpx;
+  font-size: 30rpx;
+  font-family: '微软雅黑';
+  bottom: 40rpx;
+  left: 10rpx;
+}
+.todayclass{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 20rpx;
+  font-family: '微软雅黑';
+  font-size: 35rpx;
+  height: 390rpx;
+}
+.todayclass-top{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex
+}
+.todayclass-top image{
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 60rpx;
+  margin: 5rpx;
+}
+.todayclass-top .text1{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 50rpx;
+  font-weight: bolder;
+  margin-right: 20rpx;
+}
+
+.todayclass-scrollview{
+  margin-top: 10rpx;
+  height: 300rpx;
+  width: 100%;
+}
+.scrollviewitem_border{
+  height: 120rpx;
+  width: 96%;
+  margin: 2%;
+  border-bottom: 1px solid lavender
+}
+.scrollviewitem_border image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.scrollviewitem_border .normaltext1{
+  font-size: 60rpx;
+  color: lightgray;
+  font-weight: bold;
+  margin-right: 60rpx;
+  margin-left: 30rpx;
+  width: 20%;
+}
+.scrollviewitem_border .normaltext2{
+  width: 400rpx;
+  height: 50rpx;
+  overflow: hidden;
+}
+.smalltext{
+  font-size: 30rpx;
+}
+.msgtext{
+  width: 90%;
+  margin-left: 4%;
+  text-align: center
+}
+.status{
+  width: 90%;
+  margin-left: 4%
+}
+/* 
+.cont{
+font-size:30rpx;
+width:100%;
+height:100%; 
+}
+.today{
+padding:190rpx 0 0 0;
+height:50%;
+}
+.info{
+padding:20rpx;
+background:rgba(0,0,0,.8);
+line-height: 1.5em;
+color:#eee;
+}
+.tempe{
+font-size:90rpx;
+text-align: center;
+margin:30rpx 0;
+}
+.weather{
+text-align: center;
+}
+.city{
+font-size:40rpx;
+color:#f60;
+text-align: right;
+margin: 30rpx 10rpx 0 0;
+}
+.future{
+display:flex;
+flex-direction: row;
+height:100%;
+padding:20rpx 0 20rpx 10rpx;
+background:rgba(0,0,0,.8);
+text-align: center;
+margin:50rpx 0 70rpx 0;
+color:#eee;
+}
+.future-item{
+min-height: 100%;
+width:160rpx; 
+margin: 0 10rpx;
+border:solid 1px #f90;
+padding:10rpx 0 0 0;
+line-height:2em;
+} */

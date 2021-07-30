@@ -1,0 +1,13 @@
+<view class='container'>
+  <view class='s_building'>
+    <view class='search' bindtap='east'>东院</view>
+    <view class='search' bindtap='west'>西院</view>
+    <view class='search' bindtap='north'>北院</view>
+  </view>
+
+  <map id='myMap' markers='{{markers}}' style='width:100%;height:300px;'  longitude='120.4224230000' latitude='36.0722240000' scale='17'></map>
+
+  <view class="show" data-title="{{item.title}}" data-lat='{{item.latitude}}' data-lon='{{item.longitude}}' data-add='{{item.address}}' wx:key="{{markers}}" wx:for="{{markers}}" bindtap='gothere'>
+    {{item.title}}      
+  </view>
+</view>

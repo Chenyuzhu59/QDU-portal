@@ -1,0 +1,34 @@
+<!--miniprogram/pages/grade/grade.wxml-->
+<scroll-view class='container'>
+  <block wx:for-items="{{dataset}}">
+    <view class='card'>
+      <view class='nearCard-fl'>
+      <image src='timg.jpeg'></image>
+      </view>
+      <view class='nearCard-fr'>
+        <view>
+          课程：<text>{{item.course}}</text>
+        </view>
+        <view>
+          分数：<text>{{item.score}}</text>
+        </view>
+        <view>
+          年份：<text>{{item.year}}</text>
+          学期：<text>{{item.term}}</text>
+        </view>
+        <view>
+          类别：<text>{{item.assess}}</text>
+          学分：<text>{{item.credit}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+
+<view class='refresh_grade' bindtap='bindrefresh'>
+  <image src='refresh_grade.png'></image>
+</view>
+
+<view class='gohomepage' bindtap='gohomepage'>
+  <button>回首页</button>
+</view>

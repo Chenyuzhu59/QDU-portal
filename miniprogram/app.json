@@ -1,0 +1,31 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/index/index",
+    "pages/grade/grade",
+    "pages/timetable/timetable",
+    "pages/calendar/calendar",
+    "pages/telephone/telephone",
+    "pages/telephone/detail/detail",
+    "pages/map/map",
+    "pages/library/library",
+    "pages/grade/gradeset",
+    "pages/timetable/detail",
+    "pages/library/detail/detail",
+    "pages/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEFF",
+    "navigationBarTitleText": "青大在线",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

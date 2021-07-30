@@ -1,0 +1,68 @@
+/**index.wxss**/
+@import '/assets/app.wxss';
+
+.content-title {
+  margin-top: 40rpx;
+  height: auto;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.content-title .userinfo-avatar {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150px; 
+  background-size:cover;
+}
+.userinfo-avatar:after {
+  border: none;
+}
+
+.content-login{
+  margin-top: 30px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-login .content-login-index{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+}
+.content-login .content-login-index text{
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.content-login .content-login-index input{
+  width: 8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 100%;
+}
+
+.yanzheng_btn {
+width: 207rpx;
+margin-right: 20rpx;
+height: auto;
+margin-top: 20rpx;
+padding: 0 10rpx;
+}
+
+.btn{
+  width: 100%;
+}
+.btn button{
+  width: 90%;
+}

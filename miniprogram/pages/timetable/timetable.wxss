@@ -1,0 +1,165 @@
+@import '/assets/app.wxss';
+
+.time_head {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto 30rpx auto;
+}
+
+.time_head_l {
+  width: 135rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.time_head_l_2 {
+  width: 180rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.icon-xiala{
+  width: 25rpx;
+  height: 15rpx;
+  padding-left: 5rpx;
+}
+
+.time_head_r {
+  font-size: 30rpx;
+  background: #00a4ff;
+  border-radius: 50rpx;
+  width: 250rpx;
+  color: #fff;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+  font-weight: bold;
+  text-align: center
+}
+
+.class{
+  font-size:25rpx;
+  margin:-20rpx 3% 20rpx 0;
+}
+
+/* 以下为课表主体样式 */
+.top {
+  background-color:rgb(153, 224, 252);
+  color: #333;
+  height: 110rpx;
+  font-size: 28rpx;
+}
+
+.top-text {
+  float: right;
+  width: 12.5%;
+  font-size: 9pt;
+  align-items: center;
+}
+
+.top-text view {
+  line-height: 110rpx;
+  text-align: center;
+  display: block;
+  font-size: 28rpx;
+}
+
+.timeleft {
+  width: 90rpx;
+  height: 80rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #e9e8e8;
+  border-right: 1px dashed #e9e8e8;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 24rpx;
+}
+
+.kebiao {
+  width: 750rpx;
+  margin-top: 0rpx;
+  position: absolute;
+  height: 80rpx;
+}
+
+.kebiao1 {
+  margin-top: 320rpx;
+}
+
+.kebiao2 {
+  margin-top: 720rpx;
+}
+
+.kebiao_bs {
+  width: 750rpx;
+  background: #f8f8f8;
+  height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  border-bottom:1rpx dashed #e9e8e8;
+}
+
+.flex-item {
+  width: 85rpx;
+  height: 80rpx;
+  overflow: hidden
+}
+
+.kcb-item {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+
+.kcb_class_color0 {
+  background: #f86793;
+}
+
+.kcb_class_color1 {
+  background: #80f580;
+}
+
+.kcb_class_color2 {
+  background: #0ba6fa;
+}
+
+.kcb_class_color3 {
+  background: #fc7237;
+}
+
+.kcb_class_color4{
+  background: #f3de53;
+}
+
+.kcb_class_color5 {
+  background: #f39c4b;
+}
+
+.kcb_class_color6 {
+  background: #f577ef;
+}
+.smalltext{
+  font-size: 20rpx;
+}
+
+.refresh_timetable {
+  width: 115rpx;
+  height: 115rpx;
+  position: fixed;
+  right: 20rpx;
+  bottom: 10rpx;
+  z-index: 121;
+}
+
+.refresh_timetable image {
+  width: 115rpx;
+  height: 115rpx;
+}

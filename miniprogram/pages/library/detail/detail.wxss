@@ -1,0 +1,48 @@
+ page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Arial";
+  font-size: 38rpx
+}
+.book_detail{
+width: 92%;
+margin-left: 1% ;
+background: white;
+}
+.bname{
+  font-size: 43rpx;
+  margin-left: 10rpx;
+}
+.bb{
+  margin-left: 40rpx;
+  margin-top: 15rpx;
+  margin-bottom: 5rpx
+}
+.book_infor{
+  width: 88%;
+  margin-left: 2% ;
+  background: white;
+  margin-top: 30rpx;
+}
+.ss{
+   margin-left: 40rpx;
+  margin-top: 15rpx;
+  margin-bottom: 5rpx
+}
+.cf{
+  margin-top: 40rpx;
+  margin-bottom: 5rpx
+}
+.loc{
+   width: 86%;
+  margin-left: 2%;
+  background: white;
+  margin-top: 30rpx
+}
+.loc .nr{
+margin-left: 40rpx;
+  margin-top: 15rpx;
+  margin-bottom: 5rpx
+}

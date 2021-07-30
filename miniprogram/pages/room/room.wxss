@@ -1,0 +1,73 @@
+ page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Arial";
+}
+.show{
+  margin-top: 150rpx;
+  width: 90%;
+  margin-left:10%;
+  height: 150rpx;
+  font-size: 45rpx
+}
+.show2{
+  margin-top: 20rpx;
+  width: 90%;
+  margin-left:20%;
+}
+.search_input{
+  width: 80%;
+  margin-left:10%;
+  background: white;
+  border-radius: 15rpx;
+  border: 3px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  font-size: 42rpx;
+}
+
+.search_button{
+  margin-top: 60rpx;
+  width: 80%;
+  background-color: #87CEFF;
+  margin-left:10%;
+  font-size: 38rpx
+}
+.search_area{
+margin-top: 15rpx;
+margin-left: 5%
+}
+.search_start{
+  margin-top: 20rpx;
+  margin-left: 5%
+}
+.search_end{
+  margin-left: 5%;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+ .result{ 
+  font-size: 45rpx;
+  width: 70%;
+  text-align:center;
+  margin-left: 15%;
+  margin-top: 40rpx;
+  background: white;
+  border-radius: 15rpx;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.showres{
+  font-size: 45rpx;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40rpx;
+}
+.gohomepage{
+  margin-top: 50rpx;
+   width: 80%;
+  background-color: #87CEFF;
+  margin-left:10%;
+  font-size: 38rpx
+}

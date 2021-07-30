@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="left">课程名称</view>
+      <view class="right">{{coursename}}</view>
+    </view>
+    <view class="weui-cell">
+      <view class="left">授课老师</view>
+      <view class="right">{{teacher}}</view>
+    </view>
+    <view class="weui-cell">
+      <view class="left">学分</view>
+      <view class="right">{{credit}}</view>
+    </view>
+    <view class="weui-cell">
+      <view class="left">类型</view>
+      <view class="right">{{assess}}课</view>
+    </view>
+    <view class="weui-cell">
+      <view class="left">地点时间</view>
+      <view wx:for="{{timeAndPlace}}" class="right">
+      {{item}}
+      </view>
+    </view>
+  </view>
+</view>

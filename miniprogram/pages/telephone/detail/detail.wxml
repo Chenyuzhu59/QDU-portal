@@ -1,0 +1,17 @@
+<view class='container'>
+  <view class='title'>{{myname}} </view>
+  <view class='show' wx:for='{{myarr}}' wx:key='jiaowuchu' bindtap='call' data-name='{{item.name}}' data-tele='{{item.tele}}' >
+    <text decode="{{true}}" space="{{true}}">部门：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    <text>{{item.name}}</text>
+    <text>{{text}}</text>
+    <text decode="{{true}}" space="{{true}}">联系方式:&nbsp;&nbsp;&nbsp;</text>
+    <text >{{item.tele}}</text>
+  </view>
+  <view class='notes'>
+  <text>提示：</text>
+  <text>{{text}}</text>
+  <text>我们从学校各部门官网搜集到这些联系方式，很抱歉我们不能保证这些信息全部有效。</text>
+  <text>{{text}}</text>
+  <text>点击电话号码即可拨号。</text>
+  </view>
+</view> 

@@ -1,0 +1,110 @@
+// miniprogram/pages/library/detail/detail.js
+const app = getApp()
+const myurl = app.globalData.myurl
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    name: '',
+    author:'' ,
+    press: '',
+    pageCount:'',
+    price: '',
+    sort:'' ,
+    index:'',
+    II: '',
+    results:[],
+    avail:''
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    var _this=this;
+    var id=wx.getStorageSync("id");
+    wx.request({
+      url: myurl+'library/detail',
+      header: {
+        'content-type': 'application/json'
+      },
+      method: "post",
+      data: {
+        "id":id
+      },
+      success: function (res) {        
+          _this.setData({
+            "name":res.data.name,
+              "author": res.data.author,
+            "press": res.data.press,
+            "pageCount": res.data.pageCount,
+            "price": res.data.price,
+              "sort": res.data.sort,
+              "index": res.data.index,
+            "II": res.data.ISBNISSN,
+            "results": res.data.results          
+          })     
+        var j_avail = res.data.results[0].avaliable;
+          if(j_avail==true){
+            _this.setData({
+             "avail":"入藏"
+            })
+          }else{
+            _this.setData({
+              "avail": "借出"
+            })
+          }
+      }
+    })
+  },
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

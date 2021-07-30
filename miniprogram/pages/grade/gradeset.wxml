@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="left">选择学年</view>
+      <view class="right">
+        <picker bindchange="bindYearChange"  value="{{yearIndex}}" range="{{years}}">{{years[yearIndex]}}
+        <image class='icon-xiala' src='xiala.png'></image>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="left">选择学期</view>
+      <view class="right">
+        <picker bindchange="bindTermChange"  value="{{termIndex}}" range="{{terms}}">{{terms[termIndex]}}
+        <image class='icon-xiala' src='xiala.png'></image>
+        </picker>
+      </view>
+    </view>
+  </view>
+  
+  <view class="page__bd page__bd_spacing">
+    <button bindtap='bindsave' type="lans">确定</button>
+  </view>
+</view>

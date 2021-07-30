@@ -1,0 +1,135 @@
+<!--miniprogram/pages/homepage/homepage.wxml-->
+
+<view class='showhomepage'>
+  <view class='lunbopart'>
+    <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='3000'>
+        <swiper-item>
+          <image src='../homepage/lb3.jpg'></image>
+        </swiper-item>
+        <swiper-item>
+          <image src='../homepage/lb1.jpg'></image>
+        </swiper-item>
+        <swiper-item>
+          <image src='../homepage/lb2.jpg'></image>
+        </swiper-item>
+    </swiper>
+  </view>
+  <view class='showfunction'>
+    <view class='sf'>
+      <!-- 查课表开始 -->
+      <view  bindtap='kc'  hover-class='other-navigator-hover' class='sf-item'>
+        <view class='sf-img'>
+          <image src='{{a1src}}'></image>
+        </view>
+        <text class='sf-info'>查课表</text>
+      </view>
+      <!-- 查课表结束 -->
+      <!-- 查成绩开始 -->
+      <view bindtap='cj' hover-class='other-navigator-hover' class='sf-item'>
+        <view class='sf-img'>
+          <image src='{{a2src}}'></image>
+        </view>
+         <text class='sf-info'>查成绩</text>
+      </view>     
+      <!-- 查成绩结束 -->
+      <!-- 查空教室开始 -->
+      <view bindtap='kong' hover-class='other-navigator-hover' class='sf-item'>
+        <view class='sf-img'>
+          <image src='{{a3src}}'></image>
+        </view>
+        <text class='sf-info'>查空教室</text>
+      </view>
+      <!-- 查空教室结束 -->
+      <!-- 查图书开始 -->
+      <navigator url='../library/library' hover-class='other-navigator-hover' class='sf-item'>
+        <view class='sf-img'>
+          <image src='{{a4src}}'></image>
+        </view>
+        <text class='sf-info'>查图书</text>
+      </navigator>
+      <!-- 查图书结束 -->
+    </view>
+    
+    <view class='sf'>
+      <!-- 查卫生开始 -->
+      <view  hover-class='other-navigator-hover' class='sf-item'>
+        <view class='sf-img'>
+          <image src='{{a5src}}'></image>
+        </view>
+        <text class='sf-info'>卫生成绩</text>
+      </view>
+      <!-- 查卫生结束 -->
+      <!-- 查校历开始 -->
+      <navigator url='../calendar/calendar'  hover-class='other-navigator-hover' class='sf-item'>
+        <view class='sf-img'>
+          <image src='{{a6src}}'></image>
+        </view>
+        <text class='sf-info'>查校历</text>
+      </navigator>
+      <!-- 查校历结束 -->
+      <!-- 查校内电话开始 -->
+      <navigator url='../telephone/telephone'  hover-class='other-navigator-hover' class='sf-item'>
+        <view class='sf-img'>
+          <image src='{{a7src}}'></image>
+        </view>
+        <text class='sf-info'>校内电话</text>
+      </navigator>
+      <!-- 查校内电话结束 -->
+      <!-- 查导航开始 -->
+      <navigator url='../map/map'  hover-class='other-navigator-hover' class='sf-item'>
+        <view class='sf-img'>
+          <image src='{{a8src}}'></image>
+        </view>
+        <text class='sf-info'>地图导航</text>
+      </navigator>
+      <!-- 查导航结束 -->
+      </view>
+    </view>
+    <!-- 今日课表开始 -->
+    <view class='todayclass'>
+      <view class='todayclass-top'>
+        <image src='todayclass.png'></image>
+        <text class='text1'>{{xqjformat}}</text>
+        <text class='text2'>{{currentweek}}</text>
+      </view>
+      <scroll-view scroll-y="true" class='todayclass-scrollview'>
+        <block wx:for='{{todayclass}}'>
+          <view class='scrollviewitem_border'>
+            <text class='normaltext1 left'>{{item.shijian}}</text>
+            <view class='left'> 
+              <view class='normaltext2'>{{item.name}}</view>
+              <view>
+                <image class='left'src='dingwei.png'></image>
+                <text class='left smalltext'>{{item.place}}</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+          <!-- 登陆注销开始 -->
+      <view class='msgtext'>{{msg}}</view>
+      <button bindtap='{{func}}' class='status'>{{status}}   </button>
+            <!-- 登陆注销结束 -->
+    </view>
+    <!-- 今日课表结束 -->
+
+    
+    <!-- <view class='cont'> -->
+        <!-- 今日天气-->
+        <!-- <view class='today'>
+            <view class='info'>
+            <view class='tempe'>{{today.wendu}}°C</view>
+            <view class='weather'>{{today.todayInfo.type}}{{today.todayInfo.fengxiang}}</view>
+            <view>温馨提示：{{today.ganmao}}</view>
+            <view class='city'>{{city}}</view>
+            </view>
+        </view> -->
+        <!-- 未来天气-->
+        <!-- <import src="../template/itemtpl"/>
+        <view class='future'>
+            <block wx:for="{{future}}">
+            <template is="future-item" data="{{item}}"/>
+            </block>
+        </view> -->
+   <!-- </view> -->
+</view>

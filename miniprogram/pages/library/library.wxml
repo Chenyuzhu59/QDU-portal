@@ -1,0 +1,50 @@
+<view  class='showornot' hidden='{{hid}}'>
+    <view>选择你要查询书名或作者</view>
+</view>
+  <view class='search_row' >  
+      <view class='searchType'>
+        <picker bindchange="TypeChange"  value="{{index}}" range="{{type}}">
+          <view >{{type[index]}} </view>
+        </picker>
+      </view>  
+      <view class="search">  
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search' bindtap='search'></icon>  
+          <input class=""  placeholder="请输入关键字" value="{{searchValue}}" bindinput="bindKeyInput" bindconfirm="search" confirm-type='search'/>  
+        </view>  
+      </view>  
+  </view>  
+
+  <view class='show'>   
+      <view class='result' wx:for='{{results}}' wx:key='showResults' bindtap='godetail' data-name='{{item.name}}' data-author='{{item.author}}' data-press='{{item.press}}' data-id='{{item.id}}'>
+            <text>{{item.name}}</text><text>\n</text>
+            <text decode="{{true}}" space="{{true}}"  class='smallText'>{{item.author}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+            <text  class='smallText'>@{{item.press}}</text>
+        </view>
+        <view class='page_row'>
+          <view class='pagebutton prior' hidden='{{hid_prior}}' bindtap='prior'>上一页</view>
+          <view hidden='{{hid_page}}'>第{{page}}页/共{{count}}页</view>
+          <view class='pagebutton next' hidden='{{hid_next}}' bindtap='next'>下一页</view>
+        </view>
+        
+</view>
+
+<view class='son2' hidden='{{hid2}}'>
+<view class='note'>ps:请输入作者或书名进行搜索</view>
+<view class='loc'>
+  <view>图书馆分布简介</view>
+  <view>二库：中心校区二楼
+  <text>\n</text>
+三库：中心校区三楼<text>\n</text>
+四库：中心校区四楼<text>\n</text>
+东校区西院第一书库：101<text>\n</text>
+东校区西院第二书库：104<text>\n</text>
+东校区西院综合书库： 308<text>\n</text>
+东校区西院样本书库： 205 (不外借, 仅限读者阅读)<text>\n</text>
+东校区东院社科书库： 108<text>\n</text>
+东校区东院专业书库： 208<text>\n</text>
+东校区东院资料书库： 308</view>
+</view>
+</view>
+
+

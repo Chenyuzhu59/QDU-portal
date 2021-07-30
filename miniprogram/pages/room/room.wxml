@@ -1,0 +1,40 @@
+ <view class="search"> 
+    <view  class='show' hidden='{{hid}}'>
+      <view>选择你要查询空教室的时间地点</view>
+    </view>
+    <view class='search_input'>
+      <view class="search_area">  
+        <picker bindchange="AreaChange"  value="{{index}}" range="{{area}}">
+          <text decode="{{true}}" space="{{true}}">校区：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{area[index]}} </text>
+        </picker>
+      </view>  
+      <view class="search_start">  
+        <picker bindchange="StartChange"  value="{{s_index}}" range="{{start}}">
+          <text decode="{{true}}" space="{{true}}">开始节数：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{start[s_index]}} </text>
+        </picker>
+      </view>  
+      <view class="search_end">  
+        <picker bindchange="EndChange"  value="{{e_index}}" range="{{end}}">
+          <text decode="{{true}}" space="{{true}}">结束节数：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{end[e_index]}} </text>
+        </picker>
+      </view> 
+  </view> 
+  <button bindtap='search' class='search_button' disabled='{{search_disabled}}'>搜索</button>
+  <view class='show2' hidden='{{hid}}'>
+  <text >\n</text>
+  开始节数需小于结束节数，
+  <text >\n</text><text >\n</text>
+  节数按上午4节课，（1-4）
+  <text decode="{{true}}" space="{{true}}">\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>下午4节课，（5-8）
+  <text decode="{{true}}" space="{{true}}">\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>晚上3节课，（9-11）
+  </view>
+</view>  
+
+<view class='showres' hidden='{{hidres}}'>为您查询到的空教室如下：</view>
+<view class='result' wx:for='{{results}}' wx:key='showResults' >
+    <text>{{item}}</text> 
+</view>
+
+<view class='gohomepage' bindtap='gohomepage'>
+  <button>回首页</button>
+</view>

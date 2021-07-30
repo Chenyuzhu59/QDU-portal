@@ -1,0 +1,50 @@
+/* miniprogram/pages/grade/grade.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container .card{
+  flex-direction: row;
+  width: 90%;
+  height: 220rpx;
+  margin-left: 4%;
+  margin-top: 20rpx;
+  background: white;
+  border-radius: 30rpx;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.container .card .nearCard-fl{
+  float: left;
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 80rpx;
+  margin-top: 30rpx;
+}
+.container .card .nearCard-fl image{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.container .card .nearCard-fr{
+  margin: 10rpx;
+  float: right;
+  width: 400rpx;
+  font-size: 30rpx;
+}
+
+.refresh_grade{
+  width: 115rpx;
+  height: 115rpx;
+  position: fixed;
+  right: 20rpx;
+  bottom: 10rpx;
+  z-index: 121;
+}
+
+.refresh_grade image {
+  width: 115rpx;
+  height: 115rpx;
+}

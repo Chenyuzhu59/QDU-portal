@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class='page'>
+  <view class="container">
+    <!-- 标题 -->
+    <view class="content-title">
+      <image class='userinfo-avatar' src='../index/qdtitle.jpg'>
+      </image>
+    </view>
+    
+    <view class="content-login">
+      <view class="content-login-index">
+        <text>学号</text>
+        <input value='{{username}}' placeholder='请输入学号' bindinput='usernameInput'/>
+      </view>
+      <view class="content-login-index">
+        <text>密码</text>
+        <input bindinput='passwordInput' password='true' value='{{password}}' placeholder='请输入密码'/>
+    </view>
+    <view class="content-login-index">
+      <text>验证码</text>
+      <input class='yan_input' placeholder='请输入验证码' value='{{authcode}}' bindinput='authcodeInput'/>
+      <image class='.yanzheng_btn' src="{{yanzheng_img}}" bindtap='yanzhengma_refresh' ></image> 
+      </view>
+    </view>
+    
+    <view class="page__bd page__bd_spacing btn">
+      <button class="weui-btn" type='reds'
+    bindtap='loginBtnClick'>登陆</button>
+    </view>
+
+  </view>
+</view>

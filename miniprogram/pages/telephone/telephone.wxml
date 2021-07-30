@@ -1,0 +1,9 @@
+<scroll-view class='container'>
+    <view class='all-office'>
+    
+      <view class='office' wx:for='{{oname}}' wx:key='office-name' bindtap='godetail' data-name='{{item.name}}' data-arr='{{item.arr}}'>
+          <text>{{item.name}}</text>
+      </view>
+     
+    </view>
+</scroll-view>

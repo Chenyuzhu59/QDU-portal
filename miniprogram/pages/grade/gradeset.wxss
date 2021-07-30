@@ -1,0 +1,18 @@
+@import '/assets/app.wxss';
+weui-cells{
+  width: 100%;
+}
+.weui-cell {
+  margin-left: 5%;
+  width: 90%;
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 1px solid #eee
+}
+
+
+.icon-xiala{
+  width: 35rpx;
+  height: 20rpx;
+  padding-left: 5rpx;
+}

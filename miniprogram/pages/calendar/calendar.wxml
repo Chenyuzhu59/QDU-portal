@@ -1,0 +1,77 @@
+<!--calendar.wxml-->
+<!-- test test -->
+<scroll-view class='container'>
+  <view class='showcal' style='text-align:center;'>
+    <image class='calpic' src='../calendar/cal.jpg'>
+    </image>
+  </view>
+  <view class='notes'>
+    <text> \n </text>
+    <view class='stitle' style='text-align: center;'>
+      <text>2019-2020校历说明</text>
+    </view>
+
+    <view class='semester semester1'>
+      <text>
+      <text style='text-decoration: underline;'> 一、2019年春季学期</text>
+          1.本学期共安排18周，其中课程教学16周，复习考试2周；毕业班教学总周数为16周，应于6月15日前结束 全部教学工作。    
+          2.在校生于2月23日（星期六）、24日（星期日）报到注册。    
+          3.春季运动会安排在5月9日（星期四）、10日（星期五）两天。    
+          4.2019年清明节、劳动节和端午节的放假时间以学校发布的通知为准
+      </text>
+      <text> \n </text>
+    </view>
+
+    <view class='semester semester2'>
+      <text>
+      <text style='text-decoration: underline;'> 二、2019年夏季学期</text>
+          1.本学期安排2周，安排高端学术报告、学生创新实践活动、实习等。    
+          2.暑假：学生放假时间为2019年7月12日～8月30日，共7周。
+      </text>
+      <text> \n </text>
+    </view>
+    
+    <view class='semester semester3'>
+    <text>
+    <text style='text-decoration: underline;'>三、2019年秋季学期</text>
+          1.本学期共安排19周，其中课程教学17周，复习考试2周。    
+          2.在校生于8月31日（星期六）、9月1日（星期日）报到注册。    
+          3.2019级新生于9月7日（星期六）报到，9月8日～20日进行入学教育和军训，9月23日开始正常上课。    
+          4.中秋节：9月13日（星期五）放假。    
+          5.国庆节：10月1日（星期二）至10月7日（星期一）放假（共7天），9月29日（星期日）、10月12日（星 期六）正常上课。
+          6.2020年元旦的放假时间以学校发布的通知为准。    
+          7.寒假：学生放假时间为2020年1月10日～2月14日，共5周。
+    </text>
+    <text> \n </text>
+    </view>
+
+    <view class='semester semester4'>
+    <text>
+    <text style='text-decoration: underline;'>四、2020年春季学期</text>
+         1.本学期共安排19周，其中课程教学17周，复习考试2周；毕业班教学总周数为17周，应于6月12日前结束 全部教学工作。    
+         2.在校生于2月15日（星期六）、16日（星期日）报到注册。    
+         3.春季运动会安排在4月16日（星期四）、17日（星期五）两天。    
+         4.2020年清明节、劳动节和端午节的放假时间以学校发布的通知为准
+    </text>
+    <text> \n </text>
+    </view>
+
+    <view class='semester semester5'>
+    <text>
+    <text style='text-decoration: underline;'>五、2020年夏季学期</text>
+        1.本学期安排2周，安排高端学术报告、学生创新实践活动、实习等。    
+        2.暑假：学生放假时间为2020年7月10日～8月28日，共7周
+    </text>
+    <text> \n </text>
+    </view>
+
+    <view class='lastnotes' style='text-align: center;'>
+        <text>
+            新校历新安排
+            希望大家合理利用时间
+            认真规划生活
+        </text>
+    </view>
+    
+  </view>
+</scroll-view>

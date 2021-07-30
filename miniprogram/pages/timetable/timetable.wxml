@@ -1,0 +1,45 @@
+<view class='page'>
+  <view class='time_head'>
+    <picker class='left time_head_l' bindchange="bindYearChange"  value="{{yearIndex}}" range="{{years}}">{{years[yearIndex]}}
+    <image class='icon-xiala' src='xiala.png'></image>
+    </picker>
+
+    <picker class='left time_head_l_2' bindchange="bindWeekChange"  value="{{weekIndex}}" range="{{weeks}}">第{{weeks[weekIndex]}}周
+    <image class='icon-xiala' src='xiala.png'></image>
+    </picker>
+
+    <picker  class='right time_head_r' bindchange="bindTermChange"  value="{{termIndex}}" range="{{terms}}">当前学期：{{terms[termIndex]}}
+    </picker>
+  </view>
+  <view class='right class'>{{class}}</view>
+  <view class='cl'></view>
+</view>
+
+<view class="top">
+  <view wx:for="{{weeklist}}" class="top-text">
+    <view>{{item}}</view>
+  </view>
+</view>
+
+<view style="height:800rpx;width:730rpx;display:flex;margin-bottom:50rpx">
+  <view style="background-color:#f8f8f8;color:#666666;">
+    <view wx:for="{{times}}" class="timeleft">
+      {{item}}
+    </view>
+  </view>
+
+  <view wx:for="{{[0,1,2,3,4]}}">
+    <view style="width:750rpx; position: absolute;border-bottom:1rpx dashed #e9e8e8;margin-top:{{(index+1)*160-1}}rpx;box-sizing: border-box;">
+    </view>
+  </view>
+
+<!--课表-->
+  <view wx:for="{{week_kecheng}}">
+    <view class="flex-item kcb-item {{item.bg}}" style="margin-left:{{(item.xqj-1)*94+10}}rpx;margin-top:{{(item.skjc-1)*80+10}}rpx;height:{{item.skcd*80-20}}rpx;">
+    <view class="smalltext" id="{{item.courseid}}" bindtap="detailclass">{{item.kcmc}}     </view>
+    </view>
+  </view>
+</view>
+<view class='gohomepage' bindtap='gohomepage'>
+  <button>回首页</button>
+</view>
