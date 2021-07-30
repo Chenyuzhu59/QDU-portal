@@ -1,2 +1,18 @@
 # QDU-portal
-A smart portal for learning and living in QDU based on WeChat mini program
+A smart portal for learning and living in QDU based on WeChat mini program.
+It was developed by me and two of my friends，Miss LI and Mr. ZHANG.
+
+## Development purpose
+QDU-portal integrates the information and functions of many official websites of QDU, so that it allows students to **use only one app to find all the information about campus.**
+We believe our app will provide students of QDU with **great convenience in study and campus life.**
+
+## Functions
+Its functions include:
+* checking grades
+* checking class schedules
+* checking available classrooms
+* checking library books
+* checking dormitory hygiene grades
+* checking campus calendar
+* checking campus official phone numbers
+* campus navigation
