@@ -1,4 +1,4 @@
-#QDU_tools_backend
+# QDU_tools_backend
 此项目是小程序的后端
 
 # 根路径
@@ -51,7 +51,7 @@
 成功会返回一个新的cookie，此cookie用于后续的查成绩查课表等功能
 ```json
 {
-    "msg": "欢迎登录 张鹏(201540704430)",
+    "msg": "欢迎登录 张X(20154070xxxx)",
     "isLoginSuccess": true,
     "cookie": "JSESSIONID=6F4E580D5B6BAF2A7BEB74F952AD8EE2.TA6"
 }
