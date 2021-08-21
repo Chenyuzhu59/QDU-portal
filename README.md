@@ -1,6 +1,6 @@
 # QDU-portal
 A smart portal for learning and living in QDU based on WeChat mini program.
-It was developed by me and two of my friends，Miss LI and Mr. ZHANG.
+It was developed by me and two of my friends——Miss LI and Mr. ZHANG.
 
 ## Development purpose
 QDU-portal integrates the information and functions of many official websites of QDU, so that it allows students to **use only one app to find all the information about campus.**
@@ -15,7 +15,7 @@ Its functions include:
 * checking library books
 * checking campus official phone numbers
 * campus navigation
-* checking dormitory hygiene grades
+
 
 ## Display
 #### 1. Mainpage
@@ -24,6 +24,6 @@ Its functions include:
 ![schedulandgrades.png](https://i.loli.net/2021/07/30/FpNo7slCQ1jYEx5.png)
 #### 3. Checking available classrooms and campus calendar
 ![room_calendar.png](https://i.loli.net/2021/08/21/GEXgVFA645pjW78.png)
-#### 4. Checking library books and campus official phone numbers
-![bookandphone.png](https://i.loli.net/2021/08/21/DTvzw6rpdc541aU.png)
-#### More display figures are being made, please wait...
+#### 4. Checking library books, campus official phone numbers and navigation
+![bookandphone.png](https://i.loli.net/2021/08/21/TK9bZ6hGloLpOEj.png)
+#### More details will be upload, please wait...
