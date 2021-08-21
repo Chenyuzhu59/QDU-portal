@@ -8,18 +8,22 @@ We believe our app will provide students of QDU with **great convenience in stud
 
 ## Functions
 Its functions include:
-* checking grades
 * checking class schedules
+* checking grades
 * checking available classrooms
-* checking library books
-* checking dormitory hygiene grades
 * checking campus calendar
+* checking library books
 * checking campus official phone numbers
 * campus navigation
+* checking dormitory hygiene grades
 
 ## Display
 #### 1. Mainpage
 ![mainpage.png](https://i.loli.net/2021/07/30/Gs72kJV1UYmRDun.png)
-#### 2. Check Schedul and Grade
+#### 2. Check class schedul and grade
 ![schedulandgrades.png](https://i.loli.net/2021/07/30/FpNo7slCQ1jYEx5.png)
+#### 3. Checking available classrooms and campus calendar
+![room_calendar.png](https://i.loli.net/2021/08/21/GEXgVFA645pjW78.png)
+#### 4. Checking library books and campus official phone numbers
+![bookandphone.png](https://i.loli.net/2021/08/21/DTvzw6rpdc541aU.png)
 #### More display figures are being made, please wait...
